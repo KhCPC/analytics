@@ -1,0 +1,35 @@
+body {
+    background: #0f172a;
+    /* background: radial-gradient(circle at top, #1e293b 0%, #0f172a 100%); */
+    color: #f3f4f6;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.chart-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 350px;
+    max-height: 400px;
+}
+
+@media (min-width: 768px) {
+    .chart-container {
+        height: 400px;
+    }
+
+}
+
+section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

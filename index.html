@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="SPA-інфографіка: ІТ-ринок Харкова 2019–2022 за даними IT Ukraine, Lviv IT Cluster, Kharkiv IT Cluster." />
+    <title>Динаміка попиту на ІТ-Фахівців у Харкові (2021–2022)| Інфографіка</title>
+    <link rel="icon" type="image/png" href="./image/favicon.ico">
+    <link rel="stylesheet" href="./styles/style.css">
+  
+</head>
+
+<body class="p-4 md:p-8">
+
+    <!-- HEADER -->
+    <header class="text-center mb-12">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-blue-400 mb-6 tracking-tight">
+            Динаміка попиту на ІТ-Фахівців у Харкові (2021–2022)
+        </h1>
+        <p class="text-lg text-gray-300 mb-20 max-w-3xl mx-auto">
+            Аналіз потреб у фахівцях комп'ютерної інженерії на основі офіційних звітів IT-асоціацій
+        </p>
+    </header>
+
+    <!-- 1. Загальні показники -->
+    <section id="section1" class="mb-20">
+        <h2 class="text-3xl font-bold text-blue-300 mb-8 border-b-2 border-blue-300 pb-2">
+            1️⃣ Загальні показники - Довоєнний Бум: Етап Розширення (2021)
+        </h2>
+        <p class="text-sm text-gray-400 mb-16">
+            2021 рік характеризувався експоненційним зростанням, що перетворило Харків на критичний хаб
+            та створило гострий дефіцит кваліфікованих інженерів усіх рівнів.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div
+                class="bg-gray-800/60 backdrop-blur rounded-xl shadow-lg p-6 text-center border-t-4 border-blue-400 transform hover:scale-[1.03] transition duration-300">
+                <p class="text-5xl font-black text-blue-400">45 000+</p>
+                <p class="text-gray-300 mt-2">Фахівців у регіоні</p>
+            </div>
+            <div
+                class="bg-gray-800/60 backdrop-blur rounded-xl shadow-lg p-6 text-center border-t-4 border-orange-400 transform hover:scale-[1.03] transition duration-300">
+                <p class="text-5xl font-black text-orange-400">$1.5 млрд</p>
+                <p class="text-gray-300 mt-2">Річний обсяг ІТ-індустрії</p>
+            </div>
+            <div
+                class="bg-gray-800/60 backdrop-blur rounded-xl shadow-lg p-6 text-center border-t-4 border-pink-400 transform hover:scale-[1.03] transition duration-300">
+                <p class="text-5xl font-black text-pink-400">$2,050</p>
+                <p class="text-gray-300 mt-2">Середня компенсація (USD, Харків, 2021)</p>
+            </div>
+        </div>
+
+        <div class="bg-gray-800/60 backdrop-blur rounded-xl shadow-lg p-6">
+            <h3 class="text-2xl font-semibold mb-4 ">Зростання фахівців (2019–2021)</h3>
+            <p class="text-sm text-gray-400 mb-20">За два роки кількість спеціалістів зросла з 31 000 до 45 000 (+45 %).</p>
+            <div class="chart-container"><canvas id="growthChart"></canvas></div>
+        </div>
+    </section>
+
+    <!-- 2. Трансформація 2022 -->
+    <section id="section2" class="mb-20">
+        <h2 class="text-3xl font-bold text-blue-300 mb-8 border-b-2 border-blue-300 pb-2">
+            2️⃣ Трансформація: Виклики Стійкості (2022)
+        </h2>
+        <p class="text-gray-400 mb-16">Повномасштабна війна змінила структуру регіонального ринку: релокація фахівців,
+            перехід на віддалену роботу та концентрація попиту на Senior-спеціалістах.</p>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div class="bg-gray-800/60 backdrop-blur rounded-xl shadow-lg p-6">
+                <h3 class="text-2xl font-semibold  mb-4">Фізична присутність у Харкові</h3>
+                <p class="text-sm text-gray-400 mb-4">Лише 4 % фахівців залишилися працювати в місті, а 96 % релокувалися або перейшли на віддалений формат роботи, що
+                свідчить про повний перехід регіонального ІТ-ринку на віддалений чи гібридний формат.</p>
+                <div class="chart-container mt-10 overflow: visible"><canvas id="presenceChart"></canvas></div>
+            </div>
+
+            <div class="bg-gray-800/60 backdrop-blur rounded-xl shadow-lg p-6">
+                <h3 class="text-2xl font-semibold  mb-4">Динаміка зміни місця роботи</h3>
+                <p class="text-sm text-gray-400 mb-4">У 2022 році 27 % фахівців змінили місце роботи. Попит був зосереджений на компаніях із гнучкими умовами
+                працевлаштування.</p>
+                <div class="chart-container mt-10 overflow: visible"><canvas id="jobChangeChart"></canvas></div>
+            </div>
+
+            <div class="lg:col-span-2 bg-gray-800/60 backdrop-blur rounded-xl shadow-lg p-6">
+                <h3 class="text-2xl font-semibold mb-4">Розподіл фахівців за спеціалізацією (2022)</h3>
+                <p class="text-sm text-gray-400 mb-4">Попри скорочення вакансій, 62% фахівців – це Software Development Specialists. Це підтверджує критичний попит на
+                Senior-інженерів для забезпечення стійкості ключових проєктів.</p>
+                <div class="chart-container max-w-4xl mx-auto overflow: visible"><canvas id="specializationChart"></canvas></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Висновок -->
+    <section id="section3" class="mb-8 p-6 bg-blue-400/10 rounded-xl border-l-8 border-blue-400 shadow-inner">
+        <h2 class="text-3xl font-bold text-blue-300 mb-3">3️⃣ Висновок</h2>
+        <p class="text-lg text-gray-200 mb-2 mt-4">Харківський ІТ-сектор залишається одним із ключових техноцентрів України.
+        </p>
+        <p class="text-lg text-gray-200 mt-4">Попри виклики 2022 року, індустрія зберігає потенціал до відновлення завдяки
+            сильній технічній базі, Senior-спільноті та міжнародній довірі.</p>
+        <p class="text-slate-200 text-lg mt-4">2021 — рік дефіциту кадрів через індустріальний бум.</p>
+        <p class="text-slate-200 text-lg mt-4">
+            2022 — перехід до кризового, але сфокусованого попиту на найдосвідченіших інженерів.
+            Критичними напрямками стали "Кібербезпека", "DevOps" та "Cloud Engineering", які забезпечують безперервність бізнесу в умовах війни.
+        </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-center text-gray-500 text-sm pt-8 border-t border-gray-700 mt-12">
+        <p>
+            Джерела:
+            <a href="https://itukraine.org.ua/it-reports-do-it-like-ukraine/" target="_blank"
+                class="text-blue-400 hover:underline">IT Ukraine Association</a>,
+            <a href="https://itcluster.lviv.ua/it-research-ukraine-report/" target="_blank"
+                class="text-blue-400 hover:underline">Lviv IT Cluster</a>,
+            <a href="https://it-kharkiv.com/news/en/kharkiv-it-research" target="_blank"
+                class="text-blue-400 hover:underline">Kharkiv IT Cluster</a>.
+        </p>
+        <!-- <p>Візуалізація створена з використанням Chart.js (Canvas) та Tailwind CSS. Усі дані — лише по Харкову.</p> -->
+    </footer>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+    <script src="./js/index.js"></script>
+  
+</body>
+
+</html>
